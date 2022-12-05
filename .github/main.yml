@@ -20,4 +20,4 @@ jobs:
     #  run: yarn install && npm run-script build
     
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./website/ s3://csce412vheredia.xyz --delete
+      run: aws s3 sync ./website/ http://csce412vheredia.xyz.s3-website.us-east-2.amazonaws.com --delete
